@@ -23,8 +23,8 @@ export default {
     return {
       list: [{
         id: 1,
-        h2: '业务&服务',
-        p: '我们从企业业务实际出发，提出富有前瞻性的解决方案，并将策略和执行结合起来。'
+        h2: '企业情报',
+        p: 'xxxxxxxx'
       }],
       businessList: []
     }

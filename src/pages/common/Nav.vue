@@ -3,15 +3,15 @@
     <header class="header clear">
       <nav class="navbar" v-show="navshow">
         <a class="navbar-brand">
-          <img height="32" src="../../assets/image/logo.png" />
+          <img src="../../assets/image/toplogo.svg" />
           <!-- <img height="32" src="../../assets/image/logo.png" /> -->
         </a>
         <ul class="menu clear">
-          <router-link tag="li" to="/" :class="{fff:navindex===0}">首页</router-link>
-          <router-link tag="li" to="/business" :class="{fff:navindex===1}">业务&服务</router-link>
-          <router-link tag="li" to="/about" :class="{fff:navindex===2}">关于公司</router-link>
-          <router-link tag="li" to="/join" :class="{fff:navindex===3}">加入我们</router-link>
-          <router-link tag="li" to="/contact" :class="{fff:navindex===4}">联系我们</router-link>
+          <router-link tag="li" to="/" :class="{fff:navindex===0}">ホーム</router-link>
+          <router-link tag="li" to="/business" :class="{fff:navindex===1}">企业情报</router-link>
+          <router-link tag="li" to="/about" :class="{fff:navindex===2}">事業案内</router-link>
+          <router-link tag="li" to="/join" :class="{fff:navindex===3}">採用情報</router-link>
+          <router-link tag="li" to="/contact" :class="{fff:navindex===4}">お問お合わせ</router-link>
         </ul>
         <span class="more" @click="downmenuClick()">
           <div class="icon-twrap" p-id="599">
@@ -34,11 +34,11 @@
     </header>
     <nav class="nav-down" v-show="downmenuShow">
       <ul class="downmenu clear">
-        <router-link tag="li" to="/" :class="{fff:navindex===0}">首页</router-link>
-        <router-link tag="li" to="/business" :class="{fff:navindex===1}">业务&服务</router-link>
-        <router-link tag="li" to="/about" :class="{fff:navindex===2}">关于公司</router-link>
-        <router-link tag="li" to="/join" :class="{fff:navindex===3}">加入我们</router-link>
-        <router-link tag="li" to="/contact" :class="{fff:navindex===4}">联系我们</router-link>
+        <router-link tag="li" to="/" :class="{fff:navindex===0}">ホーム</router-link>
+        <router-link tag="li" to="/business" :class="{fff:navindex===1}">企业情报</router-link>
+        <router-link tag="li" to="/about" :class="{fff:navindex===2}">事業案内</router-link>
+        <router-link tag="li" to="/join" :class="{fff:navindex===3}">採用情報</router-link>
+        <router-link tag="li" to="/contact" :class="{fff:navindex===4}">お問お合わせ</router-link>
       </ul>
     </nav>
   </div>
@@ -113,11 +113,10 @@ header {
 }
 .header .navbar-brand {
   float: left;
-  background-color: #fa541c;
 }
 .header .navbar-brand img {
-  height: 32px;
-  width: 152px;
+  height: 40px;
+  width: 100%;
   vertical-align: middle;
   border-style: none;
 }

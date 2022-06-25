@@ -2,8 +2,8 @@
   <div>
     <Home-Nav :navindex="3"></Home-Nav>
     <Home-Banner :list="list"></Home-Banner>
-    <Join-Item></Join-Item>
-    <Home-Join></Home-Join>
+    <!-- <Join-Item></Join-Item>
+    <Home-Join></Home-Join> -->
     <Home-Footer></Home-Footer>
   </div>
 </template>
@@ -23,9 +23,9 @@ export default {
   data () {
     return {
       list: [{
-        id: 3,
-        h2: '加入我们',
-        p: '互联网已成为这个时代的基础设施，利用不断演进的技术，让我们一起构建光辉灿烂的未来。'
+        id: 1,
+        h2: '採用情報',
+        p: 'xxxxx'
       }]
     }
   }

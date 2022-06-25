@@ -21,9 +21,9 @@ export default {
   data () {
     return {
       list: [{
-        id: 2,
-        h2: '关于公司',
-        p: '我们着眼未来，相信前程似锦'
+        id: 1,
+        h2: '事業案内',
+        p: 'xxxx'
       }]
     }
   }

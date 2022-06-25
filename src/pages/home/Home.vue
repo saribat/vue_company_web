@@ -5,9 +5,6 @@
     <Home-Product :list="list1"></Home-Product>
     <Home-Product :list="list2"></Home-Product>
     <Home-Product :list="list3"></Home-Product>
-    <Home-Partner></Home-Partner>
-    <Home-Expert></Home-Expert>
-    <Home-Join></Home-Join>
     <Home-Footer></Home-Footer>
   </div>
 </template>
@@ -16,38 +13,27 @@
 import HomeNav from '../common/Nav'
 import HomeSwiper from './components/Swiper'
 import HomeProduct from '../common/Product'
-import HomePartner from './components/Partner'
-import HomeExpert from './components/Expert'
-import HomeJoin from './components/Join'
 import HomeFooter from '../common/Footer'
 
-import axios from 'axios'
-import url from '../../modules/api.js'
 export default {
   name: 'Home',
   components: {
-    HomeNav, HomeSwiper, HomeProduct, HomePartner, HomeJoin, HomeFooter, HomeExpert
+    HomeNav, HomeSwiper, HomeProduct, HomeFooter
   },
   data () {
     return {
-      list1: [],
+      list1: [
+        {id: 1, p: 'それは、人と人をつなぐ、世代を超えたコミュニティづくりをサポートすること。樹々の温もりを感じる、上質な住まいをつくること。暮らしにあったらうれしい商品やサービスを提供すること。いざという時でも家族が安心できる住まいをつくること。そして、住まわれてからの家族の将来設計を支える仕組みをつくること。', src: require('./../../assets/image/lead_img01.jpg')}
+      ],
       list2: [],
       list3: []
     }
   },
   mounted () {
-    axios.get(url.productLists).then(res => {
-      this.list1 = res.data.list
-    })
-    axios.get(url.productLists).then(res => {
-      this.list2 = res.data.list
-    })
-    axios.get(url.productLists).then(res => {
-      this.list3 = res.data.list
-    })
   }
 }
 </script>
 
 <style scoped>
+
 </style>

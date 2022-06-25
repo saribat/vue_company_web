@@ -19,8 +19,6 @@
 
 <script>
 // swiper options example:
-import axios from 'axios'
-import url from '../../../modules/api.js'
 export default {
   name: 'HomeSwiper',
   data () {
@@ -30,13 +28,12 @@ export default {
         pagination: '.swiper-pagination',
         autoplay: 4000
       },
-      list: []
+      list: [
+        {id: 1, title: '12', src: require('./../../../assets/image/main_slide01.jpg')},
+        {id: 2, title: '12', src: require('./../../../assets/image/main_slide02.jpg')},
+        {id: 3, title: '12', src: require('./../../../assets/image/main_slide03.jpg')}
+      ]
     }
-  },
-  mounted () {
-    axios.get(url.swiperLists).then(res => {
-      this.list = res.data.data.data
-    })
   }
 }
 </script>
@@ -107,6 +104,13 @@ export default {
     padding-right: 5%;
     position: absolute;
     top: 300px;
+  }
+  .bannerimg {
+    width: unset;
+    height: unset;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 496px) {

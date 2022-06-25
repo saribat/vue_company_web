@@ -4,7 +4,6 @@
       <small>
         Copyright © 2013-2020 COMPANY<sup>®</sup>
         All rights reserved.
-        <a href="http://www.beian.miit.gov.cn/"  target="_blank">粤ICP备XXXXXXXX号-X</a>
       </small>
     </p>
   </div>

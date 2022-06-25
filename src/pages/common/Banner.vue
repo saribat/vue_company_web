@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       styleObj: '',
-      styleObj1: { backgroundImage: 'url(http://dummyimage.com/1851x500/f2b479)' },
+      styleObj1: { backgroundImage: `url(${require('../../assets/image/bussiness.jpg')})` },
       styleObj2: { backgroundImage: 'url(http://dummyimage.com/1851x500/9179f2)' },
       styleObj3: { backgroundImage: 'url(http://dummyimage.com/1851x500/84f279)' },
       styleObj4: { backgroundImage: 'url(http://dummyimage.com/1851x500/f279a7)' }
